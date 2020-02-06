@@ -6,8 +6,9 @@ public class User {
 
 		
 		UserDetail details = new UserDetail();
-		details.setAge(-10);
+		details.setAge(78);
 		System.out.println(details.getAge());
-	}
+		
+}
 
 }
