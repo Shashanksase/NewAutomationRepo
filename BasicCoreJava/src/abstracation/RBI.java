@@ -1,6 +1,6 @@
 package abstracation;
 
-public interface RBI {
+public interface RBI extends Modi,SupremCourt{
 
 	public void savingAccount();
 
