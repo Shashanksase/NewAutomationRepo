@@ -10,7 +10,12 @@ public class StringFunction {
 		System.out.println(name.length());
 
 		// Function2
-		System.out.println(name.charAt(7));
+		System.out.println(name.charAt(7));// Returns the char value at the specified index
+		//
+
+		System.out.println("index ");
+		System.out.println(name.indexOf("s"));
+		System.out.println(name.indexOf('s'));
 
 		// function 3
 		String name2 = "ShasHank";
@@ -23,37 +28,41 @@ public class StringFunction {
 		String temp = "Shashank sase";
 		String[] arr = temp.split(" ");// When can use by space , can use anything ex dot,number etc
 		for (String s : arr) {
-			
+
 			System.out.println("Function 5");
 			System.out.println(s);
 		}
-		
-		
-		////function 6	
+
+		//// function 6
 		System.out.println(temp.substring(4));
-		System.out.println(temp.substring(4, 10));//sub string 
-		
-		//function  7 
+		System.out.println(temp.substring(4, 10));// sub string
+
+		// function 7
 		System.out.println(temp.replace(" ", ""));
-		
-		//function 8
+
+		// function 8
 		String temp2 = " Shashank ";
 		System.out.println(temp2);
 		System.out.println(temp2.trim());
-		
-		//Function 9
-		String temp3 ="ShaSHANK";
+
+		// Function 9
+		String temp3 = "ShaSHANK";
 		System.out.println(temp3.toLowerCase());
 		System.out.println(temp3.toUpperCase());
-		
-		
-//Shashank
-		String temp4 ="SHASHANK";
-for (int temp41 = 0; temp41 < arr.length; temp41++) {
-	String string = arr[temp41];
-	
-}
-		
-			}
+		System.out.print("SPLIT+_________-----------------------");
+		String test = "Hello_World_how_are_You";
+		String testval [] = test.split("_");
+		for (int i = 0; i < testval.length; i++) {
+			System.out.print(testval[i]);
+		}
+
+//Shashank count "s" from the name.
+		String temp4 = "SHASHANK";
+		for (int temp41 = 0; temp41 < arr.length; temp41++) {
+			String string = arr[temp41];
+
+		}
+
+	}
 
 }

@@ -11,20 +11,24 @@ public class Function1 {
 		int add2 = sum(14, 45);
 		int add3 = sum(12, 41);
 		System.out.println(add1 + add2 + add3);
-		//sum();
+		sum();
 		String name = sha("shashank", 31);
 		System.out.println(name);
 		float total = total(45, 65, 99, 67, 75);
 		
 	}
 
-	/*
-	 * public static void sum() { int a = 5; int b = 5;
-	 * 
-	 * System.out.println(a + b);
-	 * 
-	 * }
-	 */
+	
+	  public static void sum ()  { int a = 5; int b = 15;
+	  try {
+		Thread.sleep(5000);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+	  System.out.println(a + b);
+	  
+	  }
+	 
 
 	public static int sum(int a, int b) {
 		// System.out.println(a + b);
