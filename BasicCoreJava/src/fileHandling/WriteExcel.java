@@ -19,15 +19,14 @@ public class WriteExcel {
 		XSSFWorkbook wb = new XSSFWorkbook(file);
 		XSSFSheet sheet = wb.getSheet("Sheet1");
 		XSSFRow row = sheet.getRow(3);
-		if (row==null) {
-			row=sheet.createRow(0);
+		if (row == null) {
+			row = sheet.createRow(0);
 		}
 		XSSFCell cell = row.getCell(0);
-		if (cell==null) {
-			cell=row.createCell(0);
+		if (cell == null) {
+			cell = row.createCell(0);
 		}
-		
-		
+
 		cell.setCellValue("shashank");
 		FileOutputStream file2 = new FileOutputStream(
 				"H:\\Automation\\NewAutomationRepo\\BasicCoreJava\\src\\fileHandling\\TestData.xlsx");
