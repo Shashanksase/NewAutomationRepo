@@ -26,7 +26,6 @@ public class WriteExcel {
 		if (cell == null) {
 			cell = row.createCell(0);
 		}
-
 		cell.setCellValue("shashank");
 		FileOutputStream file2 = new FileOutputStream(
 				"H:\\Automation\\NewAutomationRepo\\BasicCoreJava\\src\\fileHandling\\TestData.xlsx");
