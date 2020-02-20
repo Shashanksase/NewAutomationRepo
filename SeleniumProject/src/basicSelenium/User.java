@@ -1,12 +1,9 @@
-package sw;
+package basicSelenium;
 
-public class Read {
+public class User {
 
 	public static void main(String[] args) {
 
-		
-		
-		
 	}
 
 }
