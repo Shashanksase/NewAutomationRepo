@@ -47,6 +47,8 @@ public class FirstScenario {
 		//click next
 		dr.findElement(By.id("nextenterinsurantdata")).click();
 		
+		//Radio button 
+		//dr.findElement(By.
 		
 	}
 
