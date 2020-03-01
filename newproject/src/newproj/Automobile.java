@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.server.handler.SendKeys;
 import org.openqa.selenium.support.ui.Select;
 
-public class Autoclass {
+public class Automobile {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "D:\\Drivers\\chromedriver.exe");
