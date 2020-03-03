@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test depends on method feature(failed)">
+    <classes>
+      <class name="testngAnnotations.DependsOnMethod">
+        <methods>
+          <include name="logout"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="verifyhomepage"/>
+          <include name="truckTeardown"/>
+          <include name="afterMethod"/>
+          <include name="suiteTeardown"/>
+          <include name="login"/>
+          <include name="automobileInitialztion"/>
+          <include name="suiteInitilaztion"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testngAnnotations.DependsOnMethod -->
+    </classes>
+  </test> <!-- Test depends on method feature(failed) -->
+  <test thread-count="5" name="Test priorty feature(failed)">
+    <classes>
+      <class name="testngAnnotations.DependsOnMethod">
+        <methods>
+          <include name="logout"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="verifyhomepage"/>
+          <include name="truckTeardown"/>
+          <include name="afterMethod"/>
+          <include name="suiteTeardown"/>
+          <include name="login"/>
+          <include name="automobileInitialztion"/>
+          <include name="suiteInitilaztion"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testngAnnotations.DependsOnMethod -->
+    </classes>
+  </test> <!-- Test priorty feature(failed) -->
+</suite> <!-- Failed suite [Suite] -->

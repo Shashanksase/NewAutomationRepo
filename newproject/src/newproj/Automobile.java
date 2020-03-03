@@ -19,7 +19,6 @@ public class Automobile {
 		dr.get("http://sampleapp.tricentis.com/101/");
 
 		// Enter Vehicle Data
-
 		Thread.sleep(3000);
 		// automobile selection
 		dr.findElement(By.cssSelector("a#nav_automobile")).click();
@@ -39,9 +38,11 @@ public class Automobile {
 		sel = new Select(dr.findElement(By.xpath("//select[@name='Number of Seats']")));
 		sel.selectByVisibleText("4");
 
+
 		//Selection of fuel
 		sel = new Select(dr.findElement(By.id("fuel")));
 		sel.selectByVisibleText("Gas");
+
 		
 		// List price
 		dr.findElement(By.id("listprice")).sendKeys("100000");
@@ -102,7 +103,7 @@ public class Automobile {
 		dr.findElement(By.xpath("//button[@id='nextenterproductdata']")).click();
 		
 		//Start Date 
-		dr.findElement(By.xpath("//input[@id='startdate']")).sendKeys("04/02/2020");
+		dr.findElement(By.xpath("//input[@id='startdate']")).sendKeys("04/04/2020");
 		
 		//Insurance Sum
 		Select insurance = new Select(dr.findElement(By.xpath("//select[@id='insurancesum']")));
