@@ -2,7 +2,7 @@ package suite;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-public class TestSuite {
+public class SuiteIntilizationAndTearDown {
 
 	@BeforeSuite
 	public void suiteInitilaztion() {
