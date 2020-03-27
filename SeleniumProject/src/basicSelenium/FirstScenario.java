@@ -1,9 +1,10 @@
 package basicSelenium;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FirstScenario {
 
@@ -15,6 +16,9 @@ public class FirstScenario {
 		dr.get("http://sampleapp.tricentis.com/101/");
 
 		dr.findElement(By.cssSelector("a#nav_automobile")).click();
+		
+		WebDriverWait wait = new  WebDriverWait(dr,10);
+		//wait.until(ExpectedConditions.visibilityOf(automobile));
 		
 		//Select make
 		Select sel= new Select(dr.findElement(By.id("make")));		

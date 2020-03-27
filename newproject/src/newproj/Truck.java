@@ -18,10 +18,10 @@ public class Truck {
 
 		Thread.sleep(6000);
 
-		// truck selection
+		// Truck selection
 		dr.findElement(By.cssSelector("a#nav_truck")).click();
 		Thread.sleep(2000);
-
+		
 		// Selection of make
 		Select make = new Select(dr.findElement(By.id("make")));
 		make.selectByIndex(4);

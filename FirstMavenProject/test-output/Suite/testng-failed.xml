@@ -3,30 +3,42 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="automobile.EnterProductData">
-        <methods>
-          <include name="Chromebrowser"/>
-          <include name="ProductData"/>
-        </methods>
-      </class> <!-- automobile.EnterProductData -->
-      <class name="automobile.SelectPriceOption">
-        <methods>
-          <include name="Chromebrowser"/>
-          <include name="PriceOption"/>
-        </methods>
-      </class> <!-- automobile.SelectPriceOption -->
-      <class name="automobile.SendQuote">
+      <class name="truck.SendQuote">
         <methods>
           <include name="Chromebrowser"/>
           <include name="Quote"/>
         </methods>
-      </class> <!-- automobile.SendQuote -->
-      <class name="automobile.EnterInsurantData">
+      </class> <!-- truck.SendQuote -->
+      <class name="camper.SendQuote">
         <methods>
           <include name="Chromebrowser"/>
-          <include name="InsurantData"/>
+          <include name="Quote"/>
         </methods>
-      </class> <!-- automobile.EnterInsurantData -->
+      </class> <!-- camper.SendQuote -->
+      <class name="truck.SelectPriceOption">
+        <methods>
+          <include name="Chromebrowser"/>
+          <include name="PriceOption"/>
+        </methods>
+      </class> <!-- truck.SelectPriceOption -->
+      <class name="camper.SelectPriceOption">
+        <methods>
+          <include name="Chromebrowser"/>
+          <include name="PriceOption"/>
+        </methods>
+      </class> <!-- camper.SelectPriceOption -->
+      <class name="motorcycle.SendQuote">
+        <methods>
+          <include name="Chromebrowser"/>
+          <include name="Quote"/>
+        </methods>
+      </class> <!-- motorcycle.SendQuote -->
+      <class name="motorcycle.SelectPriceOption">
+        <methods>
+          <include name="Chromebrowser"/>
+          <include name="PriceOption"/>
+        </methods>
+      </class> <!-- motorcycle.SelectPriceOption -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

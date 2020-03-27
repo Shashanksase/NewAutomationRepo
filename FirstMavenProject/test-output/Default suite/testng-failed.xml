@@ -3,8 +3,30 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="automobile.EnterProductData">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Chromebrowser"/>
+          <include name="ProductData"/>
+        </methods>
+      </class> <!-- automobile.EnterProductData -->
+      <class name="automobile.SendQuote">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Chromebrowser"/>
+          <include name="Quote"/>
+        </methods>
+      </class> <!-- automobile.SendQuote -->
+      <class name="automobile.SelectPriceOption">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="Chromebrowser"/>
+          <include name="PriceOption"/>
+        </methods>
+      </class> <!-- automobile.SelectPriceOption -->
       <class name="automobile.EnterInsurantData">
         <methods>
+          <include name="closeBrowser"/>
           <include name="Chromebrowser"/>
           <include name="InsurantData"/>
         </methods>

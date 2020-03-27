@@ -3,6 +3,8 @@ package automobile;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import browsers.Browser;
+
 public class SelectPriceOption extends Browser {
 	@Test
 

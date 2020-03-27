@@ -1,4 +1,4 @@
-package newproj;
+	package newproj;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -16,7 +16,7 @@ public class Camper {
 		Thread.sleep(6000);
 		dr.get("http://sampleapp.tricentis.com/101/");
 
-		// truck selection
+		// Camper selection
 		dr.findElement(By.cssSelector("a#nav_camper")).click();
 
 		// Selection of make

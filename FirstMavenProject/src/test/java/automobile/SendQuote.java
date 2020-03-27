@@ -3,6 +3,8 @@ package automobile;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import browsers.Browser;
+
 public class SendQuote extends Browser  {
 	@Test
 
@@ -25,8 +27,6 @@ public class SendQuote extends Browser  {
 				
 				//Comment
 				dr.findElement(By.xpath("//textarea[@id='Comments']")).sendKeys("Who are you");
-				
-				//Send
-				dr.findElement(By.xpath("//button[@id='sendemail']")).click();
+			
 	}
 }

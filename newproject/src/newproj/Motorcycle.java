@@ -18,7 +18,7 @@ public class Motorcycle {
 
 		Thread.sleep(6000);
 
-		// truck selection
+		// Truck selection
 		dr.findElement(By.cssSelector("a#nav_motorcycle")).click();
 
 		// Selection of Model

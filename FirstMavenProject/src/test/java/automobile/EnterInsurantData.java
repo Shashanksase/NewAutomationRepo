@@ -1,9 +1,9 @@
 package automobile;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
+import browsers.Browser;
 
 public class EnterInsurantData extends Browser {
 	@Test
@@ -11,6 +11,7 @@ public class EnterInsurantData extends Browser {
 
 		Thread.sleep(3000);
 		// First Name
+
 		dr.findElement(By.name("First Name")).sendKeys("Shashank");
 
 		// Last Name
@@ -50,9 +51,13 @@ public class EnterInsurantData extends Browser {
 
 		// Picture
 		// J:\Shashank_Bharati_Wedding\Wedding_Photo\FInal_Photo_Wedding\DSC_9386.JPG
-		WebElement choosefile = dr.findElement(By.xpath("//button[@class='ideal-file-upload']"));
-		choosefile.sendKeys("J:\\Shashank_Bharati_Wedding\\Wedding_Photo\\FInal_Photo_Wedding\\DSC_9386.JPG");
-
+		/*
+		 * WebElement choosefile =
+		 * dr.findElement(By.xpath("//button[@class='ideal-file-upload']"));
+		 * choosefile.sendKeys(
+		 * "J:\\Shashank_Bharati_Wedding\\Wedding_Photo\\FInal_Photo_Wedding\\DSC_9386.JPG"
+		 * );
+		 */
 		// Next
 		dr.findElement(By.xpath("//button[@id='nextenterproductdata']")).click();
 
