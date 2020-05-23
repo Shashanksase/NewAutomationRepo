@@ -48,7 +48,7 @@ public class Automobile {
 		dr.findElement(By.id("listprice")).sendKeys("100000");
 
 		
-		//Selection of Licences plate
+		//Selection of Licenses plate
 		dr.findElement(By.id("licenseplatenumber")).sendKeys("1231323");
 
 		//annualmileage
