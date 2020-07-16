@@ -2,6 +2,7 @@ package polymorphism;
 
 public class StringFunction {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		String name = "Shashank";
@@ -26,7 +27,7 @@ public class StringFunction {
 
 		// Function 5
 		String temp = "Shashank sase";
-		String[] arr = temp.split(" ");// When can use by space , can use anything ex dot,number etc
+		String[] arr = temp.split(" ");// When can use by split , can use anything ex dot,number etc
 		for (String s : arr) {
 
 			System.out.println("Function 5");
@@ -49,18 +50,18 @@ public class StringFunction {
 		String temp3 = "ShaSHANK";
 		System.out.println(temp3.toLowerCase());
 		System.out.println(temp3.toUpperCase());
-		System.out.print("SPLIT+_________-----------------------");
+		System.out.println("SPLIT+_________-----------------------");
 		String test = "Hello_World_how_are_You";
-		String testval [] = test.split("_");
+		String testval[] = test.split("_");
 		for (int i = 0; i < testval.length; i++) {
 			System.out.print(testval[i]);
 		}
 
 //Shashank count "s" from the name.
-		String temp4 = "SHASHANK";
+		String temp4 = "SHASHANKqw";
 		for (int temp41 = 0; temp41 < arr.length; temp41++) {
-			String string = arr[temp41];
-
+			String string1 = arr[temp41];
+			System.out.println(string1);
 		}
 
 	}

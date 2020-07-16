@@ -20,7 +20,7 @@ public class ArrayClass1 {
 		 * for (int i = 0; i < 8; i++) { System.out.println(str[i]); }
 		 */
 		//  data type variable  
-		//Enchanced forloop
+		//Enhanced for loop
 		for (String    s :       str) {
 			System.out.println(s);
 			

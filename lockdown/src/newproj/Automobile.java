@@ -14,7 +14,7 @@ public class Automobile {
 		ChromeDriver dr = new ChromeDriver();
 		dr.manage().window().maximize();
 		// website launch
-		
+		  
 		Thread.sleep(4000);
 		dr.get("http://sampleapp.tricentis.com/101/");
 
@@ -154,7 +154,7 @@ public class Automobile {
 		//Comment
 		dr.findElement(By.xpath("//textarea[@id='Comments']")).sendKeys("Who are you");
 		
-		//Send
+		//Send 
 		dr.findElement(By.xpath("//button[@id='sendemail']")).click();
 		
 		

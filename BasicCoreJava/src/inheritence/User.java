@@ -21,5 +21,9 @@ public class User {
 		sm.calling();
  		
 	}
+	private class dssde{
+		
+		int i ;
+	}
 
 }

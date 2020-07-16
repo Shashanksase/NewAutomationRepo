@@ -11,16 +11,21 @@ public class HandelIFrame {
 		System.setProperty("webdriver.chrome.driver", "D:\\drivers\\chromedriver.exe");
 		ChromeDriver dr = new ChromeDriver();
 		dr.manage().window().maximize();
-		dr.get("https://paytm.com/");
+		dr.get("https://paytm.com/"); 
+		System.out.println(dr.getTitle());
 		dr.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		Thread.sleep(4000);
-		dr.findElement(By.xpath("//div[text()='Log In/Sign Up']")).click();
-		Thread.sleep(5000);
-		dr.switchTo().frame(0);
-		//dr.findElement(By.xpath("//span[text()='Login/Signup with mobile number and password']")).click();
-		
-		dr.switchTo().frame(dr.findElementByTagName("/span[text()='Login/Signup with mobile number and password']"));
-		
+		dr.findElement(By.xpath("//*[@data-reactid='190']")).click();
+
+		/*
+		 * dr.switchTo().frame(0); //dr.findElement(By.
+		 * xpath("//span[text()='Login/Signup with mobile number and password']")).click
+		 * ();
+		 * 
+		 * dr.switchTo().frame(dr.findElementByTagName(
+		 * "//*[@id=\"app\"]/div/div[6]/div[2]/div/a/img"));
+		 */
+
 	}
 
 }

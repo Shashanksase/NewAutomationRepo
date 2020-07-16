@@ -18,8 +18,7 @@ public class Camper {
 
 		// Camper selection
 		dr.findElement(By.cssSelector("a#nav_camper")).click();
-
-		// Selection of make
+// Selection of make
 		Select make = new Select(dr.findElement(By.id("make")));
 		make.selectByIndex(4);
 

@@ -21,7 +21,7 @@ public class TwoDimentionalArray {
 		for (int r = 0; r < data.length; r++) {
 			for (int c = 0; c < data[r].length; c++) {
 
-				System.out.print(data[r][c] + " ");
+				System.out.print(data[r][c] +" ");
 
 			}
 			System.out.println(" ");
