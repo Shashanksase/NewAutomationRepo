@@ -3,6 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
   <parameter name="browser" value="chrome"/>
+  <parameter name="WaitTime" value="10"/>
    <parameter name="browser" value="Firefox"/>
     <classes>
       <class name="com.tricentis.automation.driver.Driver"/>

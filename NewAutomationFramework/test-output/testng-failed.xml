@@ -3,6 +3,7 @@
 <suite thread-count="-1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test name="Test(failed)">
     <parameter name="browser" value="Firefox"/>
+    <parameter name="WaitTime" value="10"/>
     <classes>
       <class name="com.tricentis.automation.scripts.fieldVerification.HomePageTests">
         <methods>
